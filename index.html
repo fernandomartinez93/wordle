@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fernando Martinez">
+    <title>Mi Juego Wordle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Wordle</h1>
+    <div id="game-board"></div>
+    <p>Adivina la palabra secreta de 5 letras:</p>
+    <input type="text" id="guess" maxlength="5" placeholder="Tu intento" autofocus>
+    <button onclick="checkGuess()">Comprobar</button>
+    <button onclick="resetGame()">Reiniciar</button>
+    <p id="message"></p>
+    <script src="script.js"></script>
+</body>
+</html>
